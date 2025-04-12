@@ -1,0 +1,85 @@
+.food-card {
+  text-align: center;
+  width: 100%;
+  max-width: 250px;
+  margin-top: 100px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-family: 'Poppins', sans-serif;
+  flex: 1 1 200px;
+}
+
+.food-image-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 2rem;
+  border: 5px solid #efe2ff;
+  background: linear-gradient(to bottom right, #efe2ff, #ffffde);
+}
+
+.food-image {
+  width: 100%;
+  height: auto;
+  border-radius: 2rem;
+  display: block;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fbd4ce;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.food-title {
+  margin: 0.5rem 0 0.2rem;
+  color: #2b104e;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.food-author {
+  color: #9a8fb8;
+  font-size: 0.9rem;
+}
+
+/* Responsive container */
+.food-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* Optional: tweak font size or layout on smaller screens */
+@media (max-width: 600px) {
+  .food-title {
+    font-size: 1rem;
+  }
+
+  .food-card {
+    margin: 1rem;
+  }
+
+  .food-author {
+    font-size: 0.85rem;
+  }
+
+  .play-button {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+}
