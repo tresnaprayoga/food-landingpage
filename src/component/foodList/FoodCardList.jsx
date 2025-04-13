@@ -16,12 +16,12 @@ export default function FoodList() {
         slidesPerView={1}
         centeredSlides={true}
         loop={true}
+        speed={700}
         autoplay={{
           delay: 3000,
           disableOnInteraction: false,
         }}
         pagination={{ clickable: true }}
-        navigation={true}
         breakpoints={{
           640: { slidesPerView: 1 },
           768: { slidesPerView: 2 },
