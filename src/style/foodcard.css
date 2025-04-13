@@ -2,7 +2,7 @@
   text-align: center;
   width: 100%;
   max-width: 250px;
-  margin: 0.5rem auto;
+  margin: auto;
   font-family: 'Poppins', sans-serif;
   flex: 1 1 300px;
 }
@@ -82,7 +82,7 @@
   }
 
   .food-card {
-    margin: 1rem;
+    margin: auto;
   }
 
   .food-author {
