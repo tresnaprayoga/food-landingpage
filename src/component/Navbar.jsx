@@ -10,7 +10,7 @@ export default function Navbar() {
     <nav className='navbar'>
       <div className='navbar-logo'>
         <span className='burger'>🍔</span>
-        <span className='brand'>Foodyar</span>
+        <span className='brand'>Logo</span>
       </div>
 
       <ul className={`navbar-links ${isMenuOpen ? 'active' : ''}`}>
