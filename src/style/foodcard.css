@@ -6,7 +6,7 @@
   margin-left: 1rem;
   margin-right: 1rem;
   font-family: 'Poppins', sans-serif;
-  flex: 1 1 200px;
+  flex: 1 1 300px;
 }
 
 .food-image-wrapper {
@@ -54,6 +54,20 @@
   font-size: 0.9rem;
 }
 
+.food-list-slider {
+  padding: 2rem;
+  max-width: 100%;
+}
+
+.swiper-pagination-bullet {
+  background: #caa5e0;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: #7c3aed;
+}
+
 /* Responsive container */
 .food-list-container {
   display: flex;
@@ -82,4 +96,9 @@
     height: 50px;
     font-size: 1.5rem;
   }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #7c3aed;
 }
