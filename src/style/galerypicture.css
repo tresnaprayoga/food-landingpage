@@ -1,14 +1,13 @@
 .gallery-container {
-  width: 70%;
+  width: 100%;
   margin: 10px auto;
   display: grid;
-  grid-template-columns: repeat(1, 1fr); /* Default: 1 kolom */
+  grid-template-columns: repeat(2, 1fr); /* Default: 1 kolom */
   gap: 16px;
-  padding: 16px;
 }
 
 /* ≥576px: 2 kolom */
-@media (min-width: 576px) {
+@media (min-width: 476px) {
   .gallery-container {
     grid-template-columns: repeat(2, 1fr);
   }

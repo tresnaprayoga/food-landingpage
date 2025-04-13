@@ -1,7 +1,6 @@
 /* Testimonial.css */
 .testimonials {
   padding: 2rem 1rem;
-  background: #f9f9f9;
   text-align: center;
 }
 
@@ -37,10 +36,17 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 1.5rem;
+    margin-top: 100px;
+    background: hsl(0, 94%, 68%);
+
+    border-radius: 10px;
   }
 
   .testimonial-card {
-    margin: 0;
+    margin-top: -50px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border: 5px solid hsl(0, 94%, 68%);
   }
 }
 

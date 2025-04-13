@@ -1,5 +1,5 @@
 .home-galery {
-  width: 80%;
+  width: 100%;
   margin: 50px auto;
   border-radius: 5px;
 }
@@ -7,4 +7,11 @@
 .home-galery h2 {
   text-align: center;
   font-family: 'Poppins', sans-serif;
+}
+
+/* ≥992px: 4 kolom */
+@media (min-width: 992px) {
+  .home-galery {
+    width: 70%;
+  }
 }
