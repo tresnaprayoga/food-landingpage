@@ -2,19 +2,26 @@ import React from 'react';
 import FoodCard from './FoodCard';
 import foodData from '../../data/dataFoodList';
 import { SwiperSlide, Swiper } from 'swiper/react';
-import { Pagination } from 'swiper/modules';
+import { Pagination, Autoplay, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { Navigation } from 'swiper/modules';
+import 'swiper/css/navigation';
 
 export default function FoodList() {
   return (
     <div className='food-list-slider'>
       <Swiper
-        modules={[Pagination, Navigation]}
-        navigation={true}
-        spaceBetween={20}
+        modules={[Pagination, Navigation, Autoplay]}
+        spaceBetween={10}
+        slidesPerView={1}
+        centeredSlides={true}
+        loop={true}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
         pagination={{ clickable: true }}
+        navigation={true}
         breakpoints={{
           640: { slidesPerView: 1 },
           768: { slidesPerView: 2 },
