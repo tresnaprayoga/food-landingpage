@@ -4,7 +4,7 @@ function OrderForm() {
   const [formData, setFormData] = useState({
     name: '',
     nohp: '',
-    address: '',
+    keterangan: '',
     quantity: '',
   });
   const [errors, setErrors] = useState({});
@@ -18,7 +18,7 @@ function OrderForm() {
     const newErrors = {};
     if (!formData.name.trim()) newErrors.name = 'Nama wajib diisi';
     if (!formData.nohp.trim()) newErrors.address = 'No Wahtsaap';
-    if (!formData.address.trim()) newErrors.address = 'Alamat wajib diisi';
+    if (!formData.keterangan.trim()) newErrors.address = 'wajib diisi';
     if (!formData.quantity || formData.quantity <= 0) newErrors.quantity = 'Jumlah harus lebih dari 0';
     return newErrors;
   };
@@ -28,7 +28,7 @@ function OrderForm() {
     const formErrors = validateForm();
     if (Object.keys(formErrors).length === 0) {
       alert('Pesanan berhasil dikirim!');
-      setFormData({ name: '', address: '', quantity: '', nohp: '' });
+      setFormData({ name: '', keterangan: '', quantity: '', nohp: '' });
     } else {
       setErrors(formErrors);
     }
@@ -36,7 +36,7 @@ function OrderForm() {
 
   return (
     <div className='form-container'>
-      <h2>Pesan Sekarang</h2>
+      <h2>Hubungi Kami</h2>
       <form onSubmit={handleSubmit}>
         <div className='form-group'>
           <input type='text' name='name' value={formData.name} onChange={handleChange} placeholder='Nama' />
@@ -49,8 +49,8 @@ function OrderForm() {
         </div>
 
         <div className='form-group'>
-          <textarea name='address' value={formData.address} onChange={handleChange} placeholder='Alamat Pengiriman' />
-          {errors.address && <span className='error'>{errors.address}</span>}
+          <textarea name='address' value={formData.keterangan} onChange={handleChange} placeholder='Keterangan' />
+          {errors.keterangan && <span className='error'>{errors.keterangan}</span>}
         </div>
         {/* <div className='form-group'>
           <input type='number' name='quantity' value={formData.quantity} onChange={handleChange} placeholder='Jumlah (kg)' min='1' />

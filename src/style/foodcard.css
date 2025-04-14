@@ -3,7 +3,8 @@
   width: 100%;
   max-width: 250px;
   margin: auto;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
+  font-weight: lighter;
   flex: 1 1 300px;
 }
 

@@ -8,7 +8,8 @@
 
 .home-galery h2 {
   text-align: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
+  font-weight: lighter;
 }
 
 /* ≥992px: 4 kolom */

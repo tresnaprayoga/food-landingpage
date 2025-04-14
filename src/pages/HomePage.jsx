@@ -7,6 +7,7 @@ import imageUrls from '../data/dataGalery';
 import Testimonial from '../component/Testimoni';
 import LocationMap from '../component/MapLocation';
 import OrderForm from '../component/FormInput';
+import Footer from '../component/Footer';
 import '../style/home.css';
 
 function Homepage() {
@@ -29,6 +30,10 @@ function Homepage() {
           <LocationMap />
         </div>
       </main>
+
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }
