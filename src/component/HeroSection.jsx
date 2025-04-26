@@ -1,8 +1,4 @@
-import heroContent from '../data/data';
-
-export default function HeroSection() {
-  const { titleLine1, titleLine2, subtitle, buttonText, imageSrc } = heroContent;
-
+export default function HeroSection({ titleLine1, titleLine2, subtitle, buttonText, imageSrc }) {
   return (
     <section className='hero-section'>
       <div className='hero-text'>

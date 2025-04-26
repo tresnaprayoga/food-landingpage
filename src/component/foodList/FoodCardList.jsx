@@ -1,13 +1,12 @@
 import React from 'react';
 import FoodCard from './FoodCard';
-import foodData from '../../data/dataFoodList';
 import { SwiperSlide, Swiper } from 'swiper/react';
 import { Pagination, Autoplay, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-export default function FoodList() {
+export default function FoodList({ foodData }) {
   return (
     <div className='food-list-slider'>
       <Swiper
