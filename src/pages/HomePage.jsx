@@ -4,15 +4,12 @@ import Navbar from '../component/Navbar';
 import FoodList from '../component/foodList/FoodCardList';
 import GalleryList from '../component/GaleryListPicture/GaleryList';
 import Testimonial from '../component/Testimoni';
-import LocationMap from '../component/MapLocation';
-import OrderForm from '../component/FormInput';
 import WhatsAppButton from '../component/WaButton';
 import Footer from '../component/Footer';
 import CopyRight from '../component/Copyright ';
 import ListCardNews from '../component/News/ListNews';
 import '../style/home.css';
 import { HeroSectionContent, DataProdukSlide, ImageGalry, Testimoni, CardNews } from '../data/data';
-import { dataHeroSection } from '../../../../sport/src/data/data';
 
 function Homepage() {
   const [DataHeroSection, setDataHeroSection] = useState(HeroSectionContent());
