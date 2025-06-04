@@ -1,13 +1,14 @@
-.navbar {
+.navbar-restoran-satu {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1rem 2rem;
   font-family: 'Poppins', sans-serif;
   position: relative;
+  background-color: #ffd700;
 }
 
-.navbar-logo {
+.navbar-logo-restoran-satu {
   display: flex;
   align-items: center;
   font-size: 1.5rem;
@@ -15,12 +16,12 @@
   font-weight: bold;
 }
 
-.burger {
+.burger-restoran-satu {
   font-size: 1.8rem;
   margin-right: 0.5rem;
 }
 
-.navbar-links {
+.navbar-links-restoran-satu {
   display: flex;
   gap: 2rem;
   list-style: none;
@@ -28,19 +29,19 @@
   padding: 0;
 }
 
-.navbar-links li {
+.navbar-links-restoran-satu li {
   font-size: 1rem;
   color: #6c5f8d;
   cursor: pointer;
   position: relative;
 }
 
-.navbar-links li.active {
+.navbar-links-restoran-satu li.active {
   color: #2b104e;
   font-weight: 600;
 }
 
-.navbar-links li.active::after {
+.navbar-links-restoran-satu li.active::after {
   content: '';
   position: absolute;
   bottom: -5px;
@@ -51,7 +52,7 @@
   border-radius: 10px;
 }
 
-.my-kitchen-btn {
+.my-kitchen-btn-restoran-satu {
   background-color: #fbd4ce;
   color: #2b104e;
   border: none;
@@ -63,7 +64,7 @@
 }
 
 /* HAMBURGER ICON */
-.hamburger-icon {
+.hamburger-icon-restoran-satu {
   display: none;
   font-size: 1.8rem;
   cursor: pointer;
@@ -71,11 +72,11 @@
 
 /* RESPONSIVE */
 @media screen and (max-width: 768px) {
-  .hamburger-icon {
+  .hamburger-icon-restoran-satu {
     display: block;
   }
 
-  .navbar-links {
+  .navbar-links-restoran-satu {
     display: none;
     flex-direction: column;
     position: absolute;
@@ -88,22 +89,22 @@
     z-index: 999;
   }
 
-  .navbar-links.active {
+  .navbar-links-restoran-satu.active {
     display: flex;
   }
 
-  .desktop-only {
+  .desktop-only-restoran-satu {
     display: none;
   }
 
-  .mobile-only {
+  .mobile-only-restoran-satu {
     display: block;
     margin-top: 1rem;
   }
 }
 
 @media screen and (min-width: 769px) {
-  .mobile-only {
+  .mobile-only-restoran-satu {
     display: none;
   }
 }

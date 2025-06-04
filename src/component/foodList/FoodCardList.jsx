@@ -8,7 +8,7 @@ import 'swiper/css/navigation';
 
 export default function FoodList({ foodData }) {
   return (
-    <div className='food-list-slider'>
+    <div className='food-list-slider-restoran-satu'>
       <Swiper
         modules={[Pagination, Navigation, Autoplay]}
         spaceBetween={10}

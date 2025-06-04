@@ -1,0 +1,12 @@
+.copy-right {
+  margin: auto;
+  padding: 3px;
+  background-color: #ffd700;
+}
+
+.copy-right p {
+  text-align: center;
+  font-family: 'Poppins';
+  font-weight: normal;
+  font-size: 12px;
+}

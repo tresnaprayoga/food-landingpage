@@ -1,10 +1,10 @@
 /* Testimonial.css */
-.testimonials {
+.testimonials-restoran-satu {
   padding: 2rem 1rem;
   text-align: center;
 }
 
-.testimonial-card {
+.testimonial-card-restoran-satu {
   max-width: 300px;
   margin: 1rem auto;
   padding: 1.5rem;
@@ -14,11 +14,11 @@
   transition: transform 0.3s ease;
 }
 
-.testimonial-card:hover {
+.testimonial-card-restoran-satu:hover {
   transform: translateY(-5px);
 }
 
-.testimonial-card p {
+.testimonial-card-restoran-satu p {
   font-size: 1rem;
   color: #333;
   margin-bottom: 1rem;
@@ -26,7 +26,7 @@
   font-weight: lighter;
 }
 
-.testimonial-card h4 {
+.testimonial-card-restoran-satu h4 {
   font-size: 1.1rem;
   color: #ff5733; /* Warna aksen sesuai tema makanan */
   margin: 0;
@@ -35,7 +35,7 @@
 }
 
 @media (min-width: 768px) {
-  .testimonials {
+  .testimonials-restoran-satu {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -46,24 +46,24 @@
     border-radius: 10px;
   }
 
-  .testimonial-card {
+  .testimonial-card-restoran-satu {
     margin-top: -50px;
     margin-left: 1rem;
     margin-right: 1rem;
   }
 }
 
-.img-testimoni {
+.img-testimoni-restoran-satu {
   width: 60px;
   border-radius: 50px;
   margin: auto;
 }
 
-.img-testimoni img {
+.img-testimoni-restoran-satu img {
   width: 100%;
   border-radius: 50px;
 }
 
-.testimonial-card h4 {
+.testimonial-card-restoran-satu h4 {
   font-family: 'Poppins';
 }

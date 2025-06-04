@@ -1,21 +1,63 @@
 @import './forminputAndMap.css';
+@import './navbar.css';
 @import './wabutton.css';
+@import './footer.css';
+@import './copyright.css';
+@import './cta.css';
+@import './testimonial.css';
+@import './news.css';
 
-.home-galery {
+* {
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  padding-top: 60px; /* Sesuaikan dengan tinggi navbar */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.slide-produk-restoran-satu {
   width: 100%;
   margin: 50px auto;
   border-radius: 5px;
 }
 
-.home-galery h2 {
+.slide-produk-restoran-satu h1 {
   text-align: center;
-  font-family: 'Poppins';
-  font-weight: lighter;
+  font-family: sans-serif;
+  font-weight: normal;
+}
+.home-galery-restoran-satu {
+  width: 100%;
+  margin: 50px auto;
+  border-radius: 5px;
+}
+
+.home-galery-restoran-satu h2 {
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: normal;
+}
+
+.testimoni-restoran-satu {
+  width: 100%;
+  margin: 50px auto;
+  border-radius: 5px;
+}
+
+.testimoni-restoran-satu h2 {
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: normal;
 }
 
 /* ≥992px: 4 kolom */
 @media (min-width: 992px) {
-  .home-galery {
+  .home-galery-restoran-satu {
     width: 70%;
   }
 }

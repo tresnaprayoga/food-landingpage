@@ -1,5 +1,4 @@
 import React from 'react';
-import '../style/cta.css';
 
 function ButtonCTA({ text, link }) {
   return (

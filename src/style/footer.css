@@ -1,60 +1,110 @@
-.footer {
-  background: #f9f9f9;
-  padding: 2rem 1rem;
-  border-top: 1px solid #ddd;
-  margin-top: 100px;
+.footer-container-restoran-satu {
+  background-color: #ffd700;
+  color: red;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
 }
 
-.footer-container {
+.footer-left-restoran-satu,
+.footer-center-restoran-satu,
+.footer-right {
+  width: 100%;
+}
+
+.footer-left-restoran-satu h3 {
+  color: #ffd700;
+  margin-bottom: 10px;
+}
+
+.footer-left-restoran-satu p {
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+.footer-center-restoran-satu {
+  text-align: center;
+}
+
+.footer-center p {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.social-icons {
   display: flex;
   justify-content: center;
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
+  gap: 15px;
 }
 
-.footer-column {
-  flex: 1;
-  min-width: 200px;
+.circle-icon {
+  width: 30px;
+  height: 30px;
+  background-color: #e5cfcf;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
 }
 
-.footer-column h3 {
-  font-size: 1.2rem;
-  color: #4b0082; /* Warna ungu seperti di gambar */
-  margin-bottom: 1rem;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+.circle-icon:hover {
+  transform: scale(1.1);
 }
 
-.footer-column .icon {
-  font-size: 1.5rem;
+.footer-right iframe {
+  width: 100%;
+  height: 160px;
+  border-radius: 10px;
 }
 
-.footer-column ul {
-  list-style: none;
-  padding: 0;
+.footer-bottom {
+  font-size: 12px;
+  color: #ccc;
+  text-align: center;
+  margin-top: 20px;
 }
 
-.footer-column li {
-  font-size: 0.95rem;
-  color: #333;
-  margin-bottom: 0.5rem;
-}
-
-@media (max-width: 768px) {
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
+/* Tablet: min 600px */
+@media (min-width: 600px) {
+  .footer-container-restoran-satu {
+    padding: 100px;
   }
 
-  .footer-column {
-    text-align: center;
+  .footer-left-restoran-satu p,
+  .footer-center-restoran-satu p {
+    font-size: 15px;
   }
 
-  .footer-column h3 {
-    justify-content: center;
+  .circle-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .footer-right iframe {
+    height: 180px;
+  }
+}
+
+/* Desktop: min 992px */
+@media (min-width: 992px) {
+  .footer-container-restoran-satu {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .footer-left-restoran-satu,
+  .footer-center-restoran-satu,
+  .footer-right {
+    flex: 1;
+    max-width: 300px;
+  }
+
+  .footer-bottom {
+    position: absolute;
+    bottom: 10px;
+    left: 30px;
+    text-align: left;
+    margin-top: 0;
   }
 }

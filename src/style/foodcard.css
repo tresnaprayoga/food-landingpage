@@ -1,14 +1,14 @@
-.food-card {
+.food-card-restoran-satu {
   text-align: center;
   width: 100%;
   max-width: 250px;
   margin: auto;
-  font-family: 'Poppins';
-  font-weight: lighter;
+  font-family: sans-serif;
+  font-weight: normal;
   flex: 1 1 300px;
 }
 
-.food-image-wrapper {
+.food-image-wrapper-restoran-satu {
   position: relative;
   overflow: hidden;
   border-radius: 2rem;
@@ -16,7 +16,7 @@
   background: #ff5733;
 }
 
-.food-image {
+.food-image-restoran-satu {
   width: 100%;
   height: auto;
   border-radius: 2rem;
@@ -41,19 +41,19 @@
   z-index: 2;
 }
 
-.food-title {
+.food-title-restoran-satu {
   margin: 0.5rem 0 0.2rem;
   color: #2b104e;
   font-weight: 600;
   font-size: 1.1rem;
 }
 
-.food-author {
+.food-author-restoran-satu {
   color: #9a8fb8;
   font-size: 0.9rem;
 }
 
-.food-list-slider {
+.food-list-slider-restoran-satu {
   padding: 2rem;
   max-width: 100%;
 }
@@ -78,15 +78,15 @@
 
 /* Optional: tweak font size or layout on smaller screens */
 @media (max-width: 600px) {
-  .food-title {
+  .food-title-restoran-satu {
     font-size: 1rem;
   }
 
-  .food-card {
+  .food-card-restoran-satu {
     margin: auto;
   }
 
-  .food-author {
+  .food-author-restoran-satu {
     font-size: 0.85rem;
   }
 

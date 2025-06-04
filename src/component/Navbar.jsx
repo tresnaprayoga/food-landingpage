@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import '../style/navbar.css';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -7,26 +6,26 @@ export default function Navbar() {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <nav className='navbar'>
-      <div className='navbar-logo'>
-        <span className='burger'>🍔</span>
-        <span className='brand'>Logo</span>
+    <nav className='navbar-restoran-satu'>
+      <div className='navbar-logo-restoran-satu'>
+        <span className='burger-restoran-satu'>🍔</span>
+        <span className='brand-restoran-satu'>Logo</span>
       </div>
 
-      <ul className={`navbar-links ${isMenuOpen ? 'active' : ''}`}>
+      <ul className={`navbar-links-restoran-satu ${isMenuOpen ? 'active' : ''}`}>
         <li className='active'>Home</li>
         <li>Profil</li>
         <li>Produk</li>
         <li>Galeryt</li>
         <li>Contac</li>
-        <li className='mobile-only'>
-          <button className='my-kitchen-btn'>My Kitchen</button>
+        <li className='mobile-only-restoran-satu'>
+          <button className='my-kitchen-btn-restoran-satu'>My Kitchen</button>
         </li>
       </ul>
 
-      <button className='my-kitchen-btn desktop-only'>My Kitchen</button>
+      <button className='my-kitchen-btn-restoran-satu desktop-only-restoran-satu'>My Kitchen</button>
 
-      <div className='hamburger-icon' onClick={toggleMenu}>
+      <div className='hamburger-icon-restoran-satu' onClick={toggleMenu}>
         ☰
       </div>
     </nav>
