@@ -28,7 +28,7 @@ export default function FoodList({ foodData }) {
         }}>
         {foodData.map((food, index) => (
           <SwiperSlide key={index}>
-            <FoodCard image={food.image} title={food.title} author={food.author} showPlayButton={food.showPlayButton} />
+            <FoodCard image={food.image} title={food.title} author={food.author} />
           </SwiperSlide>
         ))}
       </Swiper>

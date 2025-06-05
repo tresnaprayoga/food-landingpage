@@ -1,51 +1,115 @@
 const heroContent = {
-  titleLine1: 'Rumah Makan Saung Sari',
+  titleLine1: 'Rumah Makan Steak Saung Sari',
   titleLine2: 'Harga Terjangkau, Rasa Memukau',
   subtitle: 'cobain dah kalo ga percaya',
   buttonText: 'Decide a Menu',
-  imageSrc: '/heroimg.jpg',
+  imageSrc: '/1.jpg',
 };
 //
-const produkData = [
+const produkDataUnggulan = [
   {
-    image: '/heroimg.jpg',
-    title: 'Title',
-    author: 'SubTitle',
+    image: '/1.jpg',
+    title: 'Grilled meat',
+    author: 'Rp 50.000',
     showPlayButton: true,
   },
   {
-    image: '/heroimg.jpg',
-    title: 'Title',
-    author: 'SubTitle',
+    image: '/2.jpg',
+    title: 'Steak with a side of salad',
+    author: 'Rp 55.000',
     showPlayButton: false,
   },
   {
-    image: '/heroimg.jpg',
-    title: 'Title',
-    author: 'SubTitle',
+    image: '/4.jpg',
+    title: 'Medium rare slicade steak',
+    author: 'Rp 40.000',
     showPlayButton: false,
   },
   {
-    image: '/heroimg.jpg',
-    title: 'Title',
-    author: 'SubTitle',
-    showPlayButton: false,
-  },
-  {
-    image: '/heroimg.jpg',
-    title: 'Title',
-    author: 'SubTitle',
-    showPlayButton: false,
-  },
-  {
-    image: '/heroimg.jpg',
-    title: 'Title',
-    author: 'SubTitle',
+    image: '/5.jpg',
+    title: 'cooked meat on tray',
+    author: 'Rp 55.000',
     showPlayButton: false,
   },
 ];
 
-const imageUrls = ['./heroimg.jpg', './heroimg.jpg', './heroimg.jpg', './heroimg.jpg', './heroimg.jpg', './heroimg.jpg'];
+const ourProduk = [
+  {
+    image: '/1.jpg',
+    title: 'Grilled meat',
+    author: 'Rp 50.000',
+    showPlayButton: true,
+  },
+  {
+    image: '/2.jpg',
+    title: 'Steak with a side of salad',
+    author: 'Rp 55.000',
+    showPlayButton: false,
+  },
+  {
+    image: '/4.jpg',
+    title: 'Medium rare slicade steak',
+    author: 'Rp 40.000',
+    showPlayButton: false,
+  },
+  {
+    image: '/5.jpg',
+    title: 'cooked meat on tray',
+    author: 'Rp 55.000',
+    showPlayButton: false,
+  },
+
+  {
+    image: '/1.jpg',
+    title: 'Grilled meat',
+    author: 'Rp 50.000',
+    showPlayButton: true,
+  },
+  {
+    image: '/2.jpg',
+    title: 'Steak with a side of salad',
+    author: 'Rp 55.000',
+    showPlayButton: false,
+  },
+  {
+    image: '/4.jpg',
+    title: 'Medium rare slicade steak',
+    author: 'Rp 40.000',
+    showPlayButton: false,
+  },
+  {
+    image: '/5.jpg',
+    title: 'cooked meat on tray',
+    author: 'Rp 55.000',
+    showPlayButton: false,
+  },
+  {
+    image: '/1.jpg',
+    title: 'Grilled meat',
+    author: 'Rp 50.000',
+    showPlayButton: true,
+  },
+  {
+    image: '/2.jpg',
+    title: 'Steak with a side of salad',
+    author: 'Rp 55.000',
+    showPlayButton: false,
+  },
+  {
+    image: '/4.jpg',
+    title: 'Medium rare slicade steak',
+    author: 'Rp 40.000',
+    showPlayButton: false,
+  },
+  {
+    image: '/5.jpg',
+    title: 'cooked meat on tray',
+    author: 'Rp 55.000',
+    showPlayButton: false,
+  },
+];
+
+const imageUrls = ['./8.jpg', './1.jpg', './2.jpg', './5.jpg', './4.jpg', './7.jpg'];
 
 const testimonials = [
   { name: 'Budi', text: 'Keripiknya renyah banget!', rating: 5, imgTestimoni: '/3.jpg' },
@@ -56,21 +120,21 @@ const testimonials = [
 
 const cardNews = [
   {
-    image: './heroimg.jpg',
+    image: './7.jpg',
     date: 'DECEMBER 21, 2024',
     title: 'Essential Tips for Successfully Running a Marathon',
     description:
       '"Lorem ipsum" adalah teks pengganti atau teks tiruan yang biasa digunakan dalam desain grafis dan penataan huruf untuk melihat bagaimana sebuah halaman akan terlihat sebelum ada isi sebenarnya. Teks ini menampilkan teks Latin acak dan digunakan untuk memberikan gambaran tata letak, bukan untuk konten asli',
   },
   {
-    image: './heroimg.jpg',
+    image: './8.jpg',
     date: 'DECEMBER 21, 2024',
     title: 'How to train for a marathon',
     description:
       '"Lorem ipsum" adalah teks pengganti atau teks tiruan yang biasa digunakan dalam desain grafis dan penataan huruf untuk melihat bagaimana sebuah halaman akan terlihat sebelum ada isi sebenarnya. Teks ini menampilkan teks Latin acak dan digunakan untuk memberikan gambaran tata letak, bukan untuk konten asli',
   },
   {
-    image: './heroimg.jpg',
+    image: './5.jpg',
     date: 'DECEMBER 21, 2024',
     title: 'understand how to practice soccer well',
     description:
@@ -83,7 +147,11 @@ function HeroSectionContent() {
 }
 
 function DataProdukSlide() {
-  return produkData;
+  return produkDataUnggulan;
+}
+
+function OurProduk() {
+  return ourProduk;
 }
 
 function ImageGalry() {
@@ -98,4 +166,4 @@ function CardNews() {
   return cardNews;
 }
 
-export { HeroSectionContent, DataProdukSlide, ImageGalry, Testimoni, CardNews };
+export { HeroSectionContent, DataProdukSlide, ImageGalry, Testimoni, CardNews, OurProduk };

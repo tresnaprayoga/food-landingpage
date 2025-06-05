@@ -8,8 +8,9 @@ import WhatsAppButton from '../component/WaButton';
 import Footer from '../component/Footer';
 import CopyRight from '../component/Copyright ';
 import ListCardNews from '../component/News/ListNews';
+import ListOurMenu from '../component/ourmenu/ListOurMenu';
 import '../style/home.css';
-import { HeroSectionContent, DataProdukSlide, ImageGalry, Testimoni, CardNews } from '../data/data';
+import { HeroSectionContent, DataProdukSlide, ImageGalry, Testimoni, CardNews, OurProduk } from '../data/data';
 
 function Homepage() {
   const [DataHeroSection, setDataHeroSection] = useState(HeroSectionContent());
@@ -17,6 +18,7 @@ function Homepage() {
   const [DataGalery, setDataGalery] = useState(ImageGalry());
   const [DataTestimoni, setDataTestimoni] = useState(Testimoni());
   const [DataNews, setDataCardNews] = useState(() => CardNews());
+  const [DataOurProduk, setDataOurProduk] = useState(() => OurProduk());
 
   return (
     <div>
@@ -28,8 +30,13 @@ function Homepage() {
         <WhatsAppButton text='Hubungi kami!' />
 
         <div className='slide-produk-restoran-satu'>
-          <h1>Produk Kami</h1>
+          <h1>Menu Unggulan Kami</h1>
           <FoodList foodData={ProdukSlide} />
+        </div>
+
+        <div className='our-produk'>
+          <h2>Produk Kami</h2>
+          <ListOurMenu ourproduk={DataOurProduk} />
         </div>
 
         <div className='home-galery-restoran-satu'>

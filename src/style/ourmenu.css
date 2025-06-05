@@ -1,0 +1,117 @@
+.our-produk {
+  width: 100%;
+  background-color: #4b2e2e;
+}
+
+.our-produk h2 {
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: normal;
+  color: white;
+}
+
+.our-menu-container-restoran-satu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.our-menu-restoran-satu {
+  background-color: #4b2e2e;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  overflow: hidden;
+  width: 340px;
+  padding: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.our-menu-restoran-satu:hover {
+  transform: translateY(-6px);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.our-menu-wrapper-restoran-satu {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+}
+
+.our-menu-image-restoran-satu {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.our-menu-title-restoran-satu {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0.75rem 0 0.25rem;
+  color: white;
+}
+
+.our-menu-author-restoran-satu {
+  font-size: 0.9rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.button-our-menu {
+  background-color: #800020;
+  margin: auto;
+  width: 200px;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button-our-menu button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.button-our-menu a {
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 15px;
+}
+
+@media screen and (min-width: 800px) {
+  .our-produk {
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .our-produk h2 {
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+  }
+
+  .our-menu-container-restoran-satu {
+    width: 90%;
+    margin: auto;
+  }
+
+  .our-menu-restoran-satu {
+    width: 340px;
+
+    padding: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center;
+    box-sizing: border-box;
+  }
+}

@@ -1,15 +1,14 @@
 .card-news-restoran-satu {
-  margin: 40px auto;
-  background-color: rgb(238, 227, 227);
+  margin: auto;
+  background-color: #4b2e2e;
   padding: 20px;
-  border-bottom: 1px solid white;
 }
 
 .card-news-restoran-satu h2 {
   text-align: center;
   font-family: sans-serif;
   font-weight: normal;
-  color: black;
+  color: white;
   margin-top: 20px;
   font-family: sans-serif;
   font-weight: normal;
@@ -22,7 +21,7 @@
   font-family: sans-serif;
   font-weight: normal;
   text-align: center;
-  color: black;
+  color: white;
 }
 
 .list {
@@ -34,7 +33,6 @@
 
 .item-restoran-satu {
   width: 350px;
-  background-color: #c40202;
 }
 
 .item-img-restoran-satu {
